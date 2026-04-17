@@ -35,8 +35,7 @@ def save_calculation(operation_type, inputs, result):
     
 
 def load_calculations():
-    #Load and displayu all saved calculations
-
+    #Load and display all saved calculations
     try:
         with open("calculations.txt","r") as file: # we try to open the file calculations.txt on read mode
             print("\n--- Saved Calculations ---")
