@@ -44,15 +44,15 @@ def load_calculations():
     except FileNotFoundError: #if no file is found
         print("No saved calculations yet") # we print that no calculations has been done
 
-    #Test cases I will change this later
-    result = half_adder(1,1)
-    print("Half Adder Test(1,1)", result)
-    save_calculation("Half Adder", (1,1),result)
+#Test cases I will change this later
+result = half_adder(1,1)
+print("Half Adder Test(1,1)", result)
+save_calculation("Half Adder", (1,1),result)
 
-    #note add an error handling code after
-    result = full_adder(1, 1, 0)
-    print("Full Adder Test (1 + 1 + 0):", result)
-    save_calculation("Full Adder", (1, 1, 0), result)
+#note add an error handling code after
+result = full_adder(1, 1, 0)
+print("Full Adder Test (1 + 1 + 0):", result)
+save_calculation("Full Adder", (1, 1, 0), result)
 
-    
+
 load_calculations()
