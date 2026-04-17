@@ -12,7 +12,11 @@ title = tk.Label(window, text=" Binary Adder Simulator", font = ("Arial",16))
 title.pack(pady=10)
 
 # === HALF ADDER SECTION ===
-half_frame = tk.Frame( window, bg="f0f0f0")
+half_frame = tk.Frame( window, bg="f0f0f0") 
 half_frame.pack(padx=10 , pady=10 , fill="both" , expand=False)
 
-tk
+tk.Label(half_frame, text= "Half Adder", font = ("Arial", 12, "bold"), bg="#f0f0f0").pack()
+
+tk.Label()
+
+
