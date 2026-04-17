@@ -23,11 +23,6 @@ def full_adder(a,b, carry_in):
     
     return sum_bit, carry_out
 
-# Test the functions
-
-print("Half Adder Test (1 + 1):", half_adder(1, 1))
-print("Full Adder Test (1 + 1 + 0):", full_adder(1, 1, 0))
-
 def save_calculation(operation_type, inputs, result):
     #this function will save each calculation to a file
     with open("calculations.txt", "a") as file: #we open or create the file calculations.txt and append to it
