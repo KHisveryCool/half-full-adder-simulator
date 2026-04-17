@@ -27,3 +27,30 @@ def full_adder(a,b, carry_in):
 
 print("Half Adder Test (1 + 1):", half_adder(1, 1))
 print("Full Adder Test (1 + 1 + 0):", full_adder(1, 1, 0))
+
+def save_calculation(operation_type, inputs, result):
+    #this function will save each calculation to a file
+    with open("calculations.txt", "a") as file: #we open or create the file calculations.txt and append to it
+        file.write(f"{operation_type}: inputs= {inputs}, result={result} \n ") #print out the operation type inputs and results
+    
+    #Test cases I will change this later
+    result = half_adder(1,1)
+    print("Half Adder Test(1,1)", result)
+    save_calculation("Half Adder", (1,1),result)
+
+    #note add an error handling code after
+    result = full_adder(1, 1, 0)
+    print("Full Adder Test (1 + 1 + 0):", result)
+    save_calculation("Full Adder", (1, 1, 0), result)
+
+def load_calculations():
+    #Load and displayu all saved calculations
+
+    try:
+        with open("calculations.txt","r") as file: # we try to open the file calculations.txt on read mode
+            print("\n--- Saved Calculations ---")
+            print(file.read()) #then print the contents of the files
+    except FileNotFoundError: #if no file is found
+        print("No saved calculations yet") # we print that no calculations has been done
+
+load_calculations()
