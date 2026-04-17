@@ -32,3 +32,17 @@ This program features a user-friendly graphical interface that was built with tk
 ## How to Run
 
 Make sure that both main.py and gui.py are installed within the same folder. Once those programs are in the same folder, simply run the GUI and if all of the installation requirements have been met, you will be faced with a simple interactive graphical interface.
+
+## References
+
+The following online resources were used in the development of this project:
+
+- tkinter Documentation: https://docs.python.org/3/library/tkinter.html
+- XOR and AND bitwise operators: https://www.w3schools.com/python/python_operators.asp
+- File handling in Python: https://www.w3schools.com/python/python_file_handling.asp
+- Half Adder and Full Adder logic: https://www.youtube.com/watch?v=ecn-8iGDRSo&t=503s
+- and class material
+
+
+
+
