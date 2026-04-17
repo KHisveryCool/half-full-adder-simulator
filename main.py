@@ -44,15 +44,31 @@ def load_calculations():
     except FileNotFoundError: #if no file is found
         print("No saved calculations yet") # we print that no calculations has been done
 
-#Test cases I will change this later
-result = half_adder(1,1)
-print("Half Adder Test(1,1)", result)
-save_calculation("Half Adder", (1,1),result)
+def search_calculation(search_input):
+    #Search for calculations by the input value
+    try:
+        with open("calculations.txt", "r") as file: #open calculations.txt
+            lines=file.readlines()
+            results = [] # create an empty list
+            for line in lines: #for each line in the file 
+                if str(search_input) in line: #we check to see if the search input is in the line
+                    results.append(line) #if so we append it to the list
+            if results: #if results has something inside
+                print(f"\n--- Search Results for '{search_input}' ---")
+                for result in results: # we print out the results
+                    print(result.strip())
+            else: # if nothing with the search input was found we print an error message
+                print(f"No calculations found with the input {search_input}")
+    except FileNotFoundError:
+        print("No saved calculations found") # if no file is found we print out an error message sayign we dont have any calculations
 
-#note add an error handling code after
-result = full_adder(1, 1, 0)
-print("Full Adder Test (1 + 1 + 0):", result)
-save_calculation("Full Adder", (1, 1, 0), result)
-
-
-load_calculations()
+def sort_calculations():
+    # Sort and display all fo the calculations
+    try:
+        with open("calculations.txt", "r") as file: #try to open calculations.txt on read mode
+            lines = sorted(file.readlines()) #we use the sorted function built in python which sorts the items in an ascending order
+            print("\n--- Sorted Calculations ---")
+            for line in lines:
+                print(line.strip())  #prints the sorted version of the calculations.txt
+    except FileNotFoundError:
+        print("No saved calculations found") # if no saved calculations were found we print an error message
