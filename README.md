@@ -13,8 +13,10 @@ and included a link to the source.
 ## Description
 
 This program is a Half Adder and Full Adder Simulator and is useful for users who wish to test Half Adder and Full Adder logic circuits. 
-A Half Adder takes 2 binary inputs, being input 1 and input 2 (0 or 1) and outputs a Sum and Carry bit.
-A Full Adder takes 3 binary inputs, being input 1, input 2 and Carry In (0 or 1) and outputs a Sum and Carry bit.
+
+- A Half Adder takes 2 binary inputs, being input 1 and input 2 (0 or 1) and outputs a Sum and Carry bit.
+- A Full Adder takes 3 binary inputs, being input 1, input 2 and Carry In (0 or 1) and outputs a Sum and Carry bit.
+
 This program features a user-friendly graphical interface that was built with tkinter, which allows users to input binary values and immediately see the results. All calculations are saved automatically to the calculations.txt file, with built-in search and sort functions that retrieve and organize past calculations. The program has comprehensive error checking that ensures no runtime errors occur and that only valid binary inputs (0 or 1) are accepted.
 
 ## Libraries Used
