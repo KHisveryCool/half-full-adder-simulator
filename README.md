@@ -31,7 +31,10 @@ This program features a user-friendly graphical interface that was built with tk
 
 ## How to Run
 
-Make sure that both main.py and gui.py are installed within the same folder. Once those programs are in the same folder, simply run the GUI and if all of the installation requirements have been met, you will be faced with a simple interactive graphical interface.
+1. Make sure that both main.py and gui.py are installed within the same folder.
+2. Make sure that all of the installation requirements have been met ( up to date version of python)
+3. Once the program is running, enter binary values ( 0 or 1 ) in the input fields and click the calculate buttons to see the results. Use Search, Sort, and Load History to manage your calculations.
+
 
 ## References
 
